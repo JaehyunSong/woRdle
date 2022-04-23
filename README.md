@@ -27,20 +27,26 @@ pacman::p_install_gh("JaehyunSong/woRdle")
 > woRdle::wordle()
 ```
 
+![](screenshots/fig1.png)
+
 ```
 ## 55 package names retrieved.
 > Input your guess (6 times reamined): vctrs
 ```
 
-![](screenshots/fig1.png)
+![](screenshots/fig2.png)
 
 ```
 > Input your guess (5 times reamined): shiny
 ```
 
+![](screenshots/fig3.png)
+
 ```
 > Input your guess (4 times reamined): bslib
 ```
+
+![](screenshots/fig4.png)
 
 ```
 > Input your guess (3 times reamined): cjoint
@@ -51,13 +57,19 @@ pacman::p_install_gh("JaehyunSong/woRdle")
 > Input your guess (3 times reamined): dplyr
 ```
 
+![](screenshots/fig5.png)
+
 ```
 > Input your guess (2 times reamined): broom
 ```
 
+![](screenshots/fig6.png)
+
 ```
 > Input your guess (1 times reamined): tools
 ```
+
+![](screenshots/fig7.png)
 
 ```
 ## Congratulation!!
