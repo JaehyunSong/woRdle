@@ -2,12 +2,12 @@
 
 {woRdle}: Enjoying Wordle with R package names.
 
-## Author
+## Contact Info
 
 * Jaehyun Song, Ph.D.
 * Associate Professor in [Faculty of Informatics](https://www.kansai-u.ac.jp/Fc_inf/), [Kansai University](https://www.kansai-u.ac.jp/ja/?stt_lang=ja)
-* <song@kansai-u.ac.jp>
-* <https://www.jaysong.net>
+* E-mail: <song@kansai-u.ac.jp>
+* Homepage: <https://www.jaysong.net>
 
 ## Installation
 
