@@ -84,11 +84,11 @@ pacman::p_install_gh("JaehyunSong/woRdle")
 
 ## Arguments
 
-A function `wordle()` has two arguments---`answer` and `strict`.
+A function `wordle()` has two arguments&mdash;`answer` and `strict`.
 
 * `answer`: `"installed"` (default), `"cran"`, or any five character.
    * `"installed"`: A pacakge list is obtained from your PC.
    * `"cran"`: A package list is obtained from CRAN.
    * any five character: You can set any answer with five characters.
-* `strict`: a logical value---`TRUE` or `FALSE` (default).
+* `strict`: a logical value; `TRUE` or `FALSE` (default).
    * If `TRUE`, a guess not in package list is not applicable.
