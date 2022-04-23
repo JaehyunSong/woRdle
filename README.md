@@ -74,12 +74,12 @@ pacman::p_install_gh("JaehyunSong/woRdle")
 ```
 ## Congratulation!!
 ## Your Record: 6 (Answer was {TOOLS})
-##  Trial 1 : [-] [-] [Y] [-] [G] 
-##  Trial 2 : [Y] [-] [-] [-] [-] 
-##  Trial 3 : [-] [Y] [Y] [-] [-] 
-##  Trial 4 : [-] [-] [Y] [-] [-] 
-##  Trial 5 : [-] [-] [G] [Y] [-] 
-##  Trial 6 : [G] [G] [G] [G] [G] 
+## ⬛⬛🟨⬛🟩
+## 🟨⬛⬛⬛⬛
+## ⬛🟨🟨⬛⬛
+## ⬛⬛🟨⬛⬛
+## ⬛⬛🟩🟨⬛
+## 🟩🟩🟩🟩🟩
 ```
 
 ## Arguments

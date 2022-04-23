@@ -157,16 +157,15 @@ wordle <- function(answer = "installed", strict = FALSE) {
                      "1" = "wrong position",
                      "0" = "not in the answer")
     match5 <- recode(match3,
-                     "2" = "[G]",
-                     "1" = "[Y]",
-                     "0" = "[-]")
+                     "2" = "\U0001f7e9",
+                     "1" = "\U0001f7e8",
+                     "0" = "\u2b1b")
 
     result$Char[result$Trial == i]   <- text_split
     result$Match1[result$Trial == i] <- match4
 
-    result2 <- paste(result2,
-                     "Trial", i, ":",
-                     paste(match5, collapse = " "), "\n")
+    result2 <- paste0(result2,
+                     paste(match5, collapse = ""), "\n")
 
     for (j in 1:length(unique(text_split))) {
       keylist$Match2[keylist$Char %in% text_split[j]] <- max(
