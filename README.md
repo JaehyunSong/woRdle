@@ -24,7 +24,7 @@ pacman::p_install_gh("JaehyunSong/woRdle")
 
 ```r
 > library(woRdle)
-> woRdle::wordle()
+> wordle()
 ```
 
 ![](screenshots/fig1.png)
