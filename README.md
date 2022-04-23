@@ -20,7 +20,7 @@ devtools::install_github("JaehyunSong/woRdle")
 pacman::p_install_gh("JaehyunSong/woRdle")
 ```
 
-## Enjoying Wordle!
+## Enjoy!
 
 ```r
 > library(woRdle)
