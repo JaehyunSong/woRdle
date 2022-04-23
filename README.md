@@ -23,8 +23,51 @@ pacman::p_install_gh("JaehyunSong/woRdle")
 ## Enjoying Wordle!
 
 ```r
-library(woRdle)
-wordle()
+> library(woRdle)
+> woRdle::wordle()
+```
+
+```
+## 55 package names retrieved.
+> Input your guess (6 times reamined): vctrs
+```
+
+![](screenshots/fig1.png)
+
+```
+> Input your guess (5 times reamined): shiny
+```
+
+```
+> Input your guess (4 times reamined): bslib
+```
+
+```
+> Input your guess (3 times reamined): cjoint
+## Guess must have 5 characters. (only alphabets)
+```
+
+```
+> Input your guess (3 times reamined): dplyr
+```
+
+```
+> Input your guess (2 times reamined): broom
+```
+
+```
+> Input your guess (1 times reamined): tools
+```
+
+```
+## Congratulation!!
+## Your Record: 6 (Answer was {TOOLS})
+##  Trial 1 : [-] [-] [Y] [-] [G] 
+##  Trial 2 : [Y] [-] [-] [-] [-] 
+##  Trial 3 : [-] [Y] [Y] [-] [-] 
+##  Trial 4 : [-] [-] [Y] [-] [-] 
+##  Trial 5 : [-] [-] [G] [Y] [-] 
+##  Trial 6 : [G] [G] [G] [G] [G] 
 ```
 
 ## Arguments
