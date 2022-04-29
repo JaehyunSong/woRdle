@@ -16,7 +16,7 @@ Play wordle with your R package names.
 }
 \details{
 \describe{
-\item{\code{answer}}{If \code{"installed"}, a package list is obtained from your PC. If \code{"cran"}, a package list is obtained from CRAN. Also, you can set any answer with five characters.}
+\item{\code{answer}}{If \code{"installed"}, a package list is obtained from your PC. If \code{"cran"}, a package list is obtained from CRAN (extremely hard mode!). Also, you can set any answer with five characters.}
 \item{\code{strict}}{If \code{TRUE}, your guess not in package list is not applicable. If \code{FALSE} (default), your guess can have any five characters.}
 }
 }

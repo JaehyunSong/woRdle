@@ -1,5 +1,5 @@
 Package: woRdle
-Title: Enjoying Wordle with R package names.
+Title: Enjoying Wordle with R package names
 Version: 0.0.1
 Authors@R: 
     person("Jaehyun", "Song", , "tintstyle@gmail.com", role = c("aut", "cre"))

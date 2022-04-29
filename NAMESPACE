@@ -2,6 +2,7 @@
 
 export(plot_wordle)
 export(wordle)
+export(wordle_list)
 importFrom(dplyr,bind_rows)
 importFrom(dplyr,case_when)
 importFrom(dplyr,mutate)
@@ -21,4 +22,5 @@ importFrom(ggplot2,theme)
 importFrom(ggplot2,theme_minimal)
 importFrom(grDevices,graphics.off)
 importFrom(magrittr,`%>%`)
+importFrom(tools,CRAN_package_db)
 importFrom(utils,installed.packages)
