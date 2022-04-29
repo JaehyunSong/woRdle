@@ -88,8 +88,8 @@ wordle <- function(answer = "installed", strict = TRUE) {
 
     text <- readline(prompt = paste0("Input your guess (", 7 - i, " times reamined): "))
 
-    if (strict & answer %in% c("installed", "cran")) {
-      while (!(text %in% pkg_list) & answer %in% c("installed", "cran")) {
+    if (strict & answer %in% c("installed", "cran", "ranking")) {
+      while (!(text %in% pkg_list)) {
         cat("{", toupper(text), "} is not in pacakge list.\n", sep = "")
         text <- readline(prompt = paste0("Input your guess (", 7 - i, " times reamined): "))
       }
