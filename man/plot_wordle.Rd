@@ -2,18 +2,26 @@
 % Please edit documentation in R/plot_wordle.R
 \name{plot_wordle}
 \alias{plot_wordle}
-\title{plot_wordle}
+\title{Plotting your guesses and remaining keys}
 \usage{
 plot_wordle(x, y)
 }
 \arguments{
 \item{x}{a data.frame}
 
-\item{y}{a.data.frame}
+\item{y}{a data.frame}
 }
 \value{
-\code{ggplot} object
+a \code{ggplot} object
 }
 \description{
-plot_wordle
+Plotting your guesses and remaining keys
+}
+\examples{
+\dontrun{
+plot_wordle(x, y)
+}
+}
+\seealso{
+\code{\link{wordle}}
 }

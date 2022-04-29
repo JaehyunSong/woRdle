@@ -1,6 +1,3 @@
-
-^dev$
-^LICENSE\.md$
 ^woRdle\.Rproj$
 ^\.Rproj\.user$
-^screenshots$
+^LICENSE\.md$
