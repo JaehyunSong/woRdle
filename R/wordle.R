@@ -19,6 +19,8 @@
 #' \item{\code{strict}}{If \code{TRUE}, your guess not in package list is not applicable. If \code{FALSE} (default), your guess can have any five characters.}
 #' }
 #'
+#' @seealso \url{https://www.nytimes.com/games/wordle/index.html}
+#'
 #' @examples
 #' \dontrun{
 #' wordle()
@@ -111,6 +113,7 @@ wordle <- function(answer = "installed", strict = TRUE) {
                      "2" = "correct",
                      "1" = "wrong position",
                      "0" = "not in the answer")
+
     match5 <- recode(match3,
                      "2" = "\U0001f7e9",
                      "1" = "\U0001f7e8",
