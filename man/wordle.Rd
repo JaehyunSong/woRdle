@@ -25,3 +25,6 @@ Play wordle with your R package names.
 wordle()
 }
 }
+\seealso{
+\url{https://www.nytimes.com/games/wordle/index.html}
+}

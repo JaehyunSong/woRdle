@@ -2,8 +2,8 @@ Package: woRdle
 Title: Enjoying Wordle with R package names
 Version: 0.0.1
 Authors@R: 
-    person("Jaehyun", "Song", , "tintstyle@gmail.com", role = c("aut", "cre"))
-Description: Enjoying Wordle with R package names.
+    person("Jaehyun", "Song", , "song@kansai-u.ac.jp", role = c("aut", "cre"))
+Description: An R package woRdle is a word game inspired by Wordle (https://www.nytimes.com/games/wordle/index.html). Unlike original version (Wordle), in woRdle, answer words are taken from R package list in your own PC or CRAN.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

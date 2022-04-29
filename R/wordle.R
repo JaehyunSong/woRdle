@@ -19,6 +19,8 @@
 #' \item{\code{strict}}{If \code{TRUE}, your guess not in package list is not applicable. If \code{FALSE} (default), your guess can have any five characters.}
 #' }
 #'
+#' @seealso \url{https://www.nytimes.com/games/wordle/index.html}
+#'
 #' @examples
 #' \dontrun{
 #' wordle()
