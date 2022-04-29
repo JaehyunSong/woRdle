@@ -15,4 +15,5 @@ Imports:
     grDevices,
     magrittr,
     tools,
-    utils
+    utils,
+    cranlogs

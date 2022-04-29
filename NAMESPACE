@@ -3,6 +3,7 @@
 export(plot_wordle)
 export(wordle)
 export(wordle_list)
+importFrom(cranlogs,cran_top_downloads)
 importFrom(dplyr,bind_rows)
 importFrom(dplyr,case_when)
 importFrom(dplyr,mutate)

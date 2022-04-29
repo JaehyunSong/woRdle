@@ -7,14 +7,14 @@
 wordle_list(type = "installed")
 }
 \arguments{
-\item{type}{\code{"installed"} (default) or \code{"cran"}.}
+\item{type}{\code{"installed"} (default), \code{"cran"}, or \code{"ranking"}.}
 }
 \description{
 Display a list of package names.
 }
 \details{
 \describe{
-\item{\code{type}}{If \code{"installed"}, a package list is obtained from your PC. If \code{"cran"}, a package list is obtained from CRAN.}
+\item{\code{type}}{If \code{"installed"}, a package list is obtained from your PC. If \code{"cran"}, a package list is obtained from CRAN. If \code{"ranking"}, a top downloaded package list is obtained from CRAN mirror using \{cranlogs\} package.}
 }
 }
 \examples{

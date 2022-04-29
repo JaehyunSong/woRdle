@@ -7,7 +7,7 @@
 wordle(answer = "installed", strict = TRUE)
 }
 \arguments{
-\item{answer}{\code{"installed"}, \code{"cran"}, or an atomic vector of any five character.}
+\item{answer}{\code{"installed"}, \code{"cran"}, \code{"ranking"}, or an atomic vector of any five character.}
 
 \item{strict}{a logical value (default is \code{FALSE})}
 }
@@ -16,7 +16,7 @@ Play wordle with your R package names.
 }
 \details{
 \describe{
-\item{\code{answer}}{If \code{"installed"}, a package list is obtained from your PC. If \code{"cran"}, a package list is obtained from CRAN (extremely hard mode!). Also, you can set any answer with five characters.}
+\item{\code{answer}}{If \code{"installed"}, a package list is obtained from your PC. If \code{"cran"}, a package list is obtained from CRAN (extremely hard mode!). If \code{"ranking"}, a top downloaded package list is obtained from CRAN mirror using \{cranlogs\} package. Also, you can set any answer with five characters.}
 \item{\code{strict}}{If \code{TRUE}, your guess not in package list is not applicable. If \code{FALSE} (default), your guess can have any five characters.}
 }
 }

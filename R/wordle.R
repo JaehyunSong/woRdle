@@ -1,6 +1,6 @@
 #' Play wordle with your R package names.
 #'
-#' @param answer \code{"installed"}, \code{"cran"}, or an atomic vector of any five character.
+#' @param answer \code{"installed"}, \code{"cran"}, \code{"ranking"}, or an atomic vector of any five character.
 #' @param strict a logical value (default is \code{FALSE})
 #'
 #' @importFrom magrittr `%>%`
@@ -9,12 +9,13 @@
 #' @importFrom tools CRAN_package_db
 #' @importFrom dplyr recode
 #' @importFrom dplyr case_when
+#' @importFrom cranlogs cran_top_downloads
 #'
 #' @export
 #'
 #' @details
 #' \describe{
-#' \item{\code{answer}}{If \code{"installed"}, a package list is obtained from your PC. If \code{"cran"}, a package list is obtained from CRAN (extremely hard mode!). Also, you can set any answer with five characters.}
+#' \item{\code{answer}}{If \code{"installed"}, a package list is obtained from your PC. If \code{"cran"}, a package list is obtained from CRAN (extremely hard mode!). If \code{"ranking"}, a top downloaded package list is obtained from CRAN mirror using \{cranlogs\} package. Also, you can set any answer with five characters.}
 #' \item{\code{strict}}{If \code{TRUE}, your guess not in package list is not applicable. If \code{FALSE} (default), your guess can have any five characters.}
 #' }
 #'
@@ -36,6 +37,13 @@ wordle <- function(answer = "installed", strict = TRUE) {
   } else if (answer == "cran") {
     cat("Getting package list from CRAN now...\n")
     pkg_list <- CRAN_package_db()[, c("Package")]
+    pkg_list <- pkg_list[nchar(pkg_list) == 5]
+    pkg_list <- pkg_list[!grepl("[0-9]", pkg_list)]
+    cat(length(pkg_list), "package names retrieved.")
+    ans      <- toupper(sample(pkg_list, 1))
+  } else if (answer == "ranking") {
+    cat("Getting package list from CRAN mirror now...\n")
+    pkg_list <- cran_top_downloads(count = 100)$package
     pkg_list <- pkg_list[nchar(pkg_list) == 5]
     pkg_list <- pkg_list[!grepl("[0-9]", pkg_list)]
     cat(length(pkg_list), "package names retrieved.")
